@@ -22,7 +22,7 @@ bool check(string pattern, string s)
         }
         for (auto it: m)
         {
-            if (it.second==a[i]) return false;
+            if ((it.second==a[i])&&(it.first!=b)) return false;
         }
         m[b]=a[i];
     }
